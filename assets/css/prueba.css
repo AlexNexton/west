@@ -166,12 +166,12 @@ body{
     font-weight: 500;
     width: 45px;
     height: 30px;
-    background-color: rgb(0, 128, 90);
+    background-color: #041791;
     text-align: center;
-    color: honeydew;
+    color: #fff;
     line-height: 30px;
     border-radius: 5px;
-    border: 1px solid honeydew;
+    border: 1px solid #fff;
     user-select: none;
 
 }
@@ -181,12 +181,12 @@ body{
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: seagreen;
+    background: #041791
 }
 
 section{
     padding: 25px 30px 20px 30px;
-    background: honeydew;
+    background: #fff;
 }
 
 section .que_text{
@@ -200,8 +200,8 @@ section .option_list{
 }
 
 section .option_list .option{
-     background: aquamarine;
-    border:  1px solid seagreen;
+     background: #fff;
+    border: 1px solid #041791;
     border-radius: 5px;
     padding:  8px 15px;
     margin-bottom: 15px;
@@ -219,8 +219,8 @@ section .option_list .option:last-child{
 
 section .option_list .option:hover{
      color: honeydew;
-    background: seagreen;
-    border-color: rgb(33, 80, 53);
+    background: #041791;
+    border-color: #fff;
 }
 
 section .option_list .option.correct{
@@ -233,7 +233,7 @@ section .option_list .option.incorrect{
     border-color: #a42834;
     color: #811e28;
     background: #a5525b;
-}
+} 
 
 section .option_list .option.disabled{
     pointer-events: none;
@@ -250,7 +250,7 @@ section .option_list .option .icon{
     transition: all 0.3s ease;
     line-height: 24px;
 }
-.option_list .option .icon.tick{
+/* .option_list .option .icon.tick{
     color: #23903c;
     border-color: #23903c;
     background: #d4edda;
@@ -260,7 +260,7 @@ section .option_list .option .icon{
     color: #a42834;
     background: #f8d7da;
     border-color: #a42834;
-}
+} */
 
 footer{
     height: 60px;
