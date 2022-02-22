@@ -117,6 +117,7 @@ body{
 }
 
 .quiz_box{
+    margin-top: 30px;
     width: 550px;
     background: #fff;
     border-radius: 5px;
@@ -264,6 +265,7 @@ section .option_list .option .icon{
 } */
 
 footer{
+    
     padding: 0 30px;
     display: flow-root;
     align-items: center;
@@ -272,6 +274,7 @@ footer{
 }
 
 footer .total_que span{
+    
     display: flex;
     user-select: none;
 }
