@@ -26,11 +26,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(17); //calling startTimer function
+    startTimer(60); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue =  17; // in keeping with paddy's day
+let timeValue =  60; // in keeping with paddy's day
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -47,7 +47,7 @@ const sign_up= result_box.querySelector(".buttons .signup");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 17; 
+    timeValue = 60; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -66,32 +66,9 @@ restart_quiz.onclick = ()=>{
 quit_quiz.onclick = ()=>{
     window.location.reload(); //reload the current window
 }
+
 //to open the
-    const openEls = document.querySelectorAll("[data-open]");
-    const isVisible = "is-visible";
-
-    for (const el of openEls) {
-        el.addEventListener("click", function () {
-            const modalId = this.dataset.open;
-            document.getElementById(modalId).classList.add(isVisible);
-        });
-    } //reload the current window
-    const closeEls = document.querySelectorAll("[data-close]");
     
-
-    for (const el of closeEls) {
-        el.addEventListener("click", function () {
-            this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-        });
-    }
-    
-
-    document.addEventListener("keyup", e => {
-        if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-            document.querySelector(".modal.is-visible").classList.remove(isVisible);
-        }
-    });
-
 
 
 const next_btn = document.querySelector("footer .next_btn");
