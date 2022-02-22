@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Hover css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">
+    <!--My Style Sheet-->
+
+    <link rel="stylesheet" href="assets/css/prueba.css" type="text/css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+     <nav class="navbar bg-color-navbar navbar-expand-sm container-fluid fixed-top">
+         <a href="index.html" class="navbar-brand nav-text-color"></a>
+         <div class="col-12">
+             <ul class="navbar-nav mr-auto">
+                 <li class="nav-item mr-2 col-md-6 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
+                     <a href="index.html" class="nav-link nav-text-color book-button hvr-grow-shadow"><i
+                             class="fas fa-home fa-lg"></i> Home</a>
+                 </li>
+                 <li class="nav-item mr-2 col-md-6 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
+                     <a href="https://westend.es/" class="nav-link nav-text-color book-button hvr-grow-shadow"
+                         target="show_blank"><i class="fas fa-play fa-lg"></i> Westend</a>
+                 </li>
+             </ul>
+         </div>
+     </nav>
+
+    
+
+
+    <!--===============================================================================Sign up section-->
+
+    <section id="signup" class="signup-section container-fluid mt-5  text-center" title="children in a forest">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 class="text-uppercase signup my-3">Sign up</h2>
+                <p class="booking-font ">
+                    Firstly, we hope the level test wasn't too difficult. <br>
+                    Sign up below to receive your results <br>
+                    Signing up is easy, all you need to do is fill out the form below <br> by clicking the button. <br>
+                    <br> We will contact you.<br>
+                </p>
+            </div>
+            <div class="col-12 col-sm-3 text-center mt-3">
+                <div class="join-class">
+                    <div class="btn book-button3 " data-toggle="modal" data-target="#chooseLanguage">
+                        <a><i class="fas fa-child button" aria-hidden="true" title="join a class"></i><span
+                                class="sr-only">little child</span></a>
+                    </div>
+                    <!-- 1. Joining a class form: Modal box-->
+                    <div class="modal fade" id="chooseLanguage" tabindex="-1" role="dialog"
+                        aria-labelledby="chooseLanguageFormHeader" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content" id="chooseLanguageBox">
+                                <!-- 1.1 Joining a classform: Header-->
+                                <div class="modal-header">
+                                    <div class="modal-title col-12 text-center" id="chooseLanguageFormHeader">
+                                        <h5 class="text-center">Sign Up</h5>
+                                        <button type="button" class="close p-1" data-dismiss="modal" aria-label="close">
+                                            <span class="red-x" aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- 1.2 Joining a class: Main body -->
+                                <form class="container pt-3" id="signUpForm" action="signUpConfirm.html">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-sm-6">
+                                            <!-- 1.1.1 name input-->
+                                            <div class="form-group mb-0">
+                                                <label for="name1"></label>
+                                                <input type="text" name="name" class="form-control text-center"
+                                                    id="name1" placeholder="Name" required>
+                                            </div>
+                                            <!-- 1.1.2 email address input-->
+                                            <div class="form-group mb-0">
+                                                <label for="email1"></label>
+                                                <input type="email" name="email" class="form-control text-center"
+                                                    id="email1" placeholder="Email address" required>
+                                            </div>
+                                            <!-- 1.1.3 phone number input-->
+                                            <div class="form-group mb-0">
+                                                <label for="phone1"></label>
+                                                <input type="number" class="form-control text-center" id="phone1"
+                                                    placeholder="Phone Number" required>
+                                            </div>
+                                            <!-- 1.1.3 number of children input-->
+                                            <div class="form-group mb-0">
+                                                <div class="px-0">
+                                                    <label for="child"></label>
+                                                    <select name="child" class="form-control" id="child" required>
+                                                        <option value="">No. of Children - (max 4)</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- 1.1.4 Choose date-->
+                                            <div class="form-group mb-0">
+                                                <div class="px-0">
+                                                    <label for="date"></label>
+                                                    <select name="date" class="form-control" id="date" required>
+                                                        <option value="">Choose previous level you have done</option>
+                                                        <option value="B1">B1</option>
+                                                        <option value="B2">B2</option>
+                                                        <option value="C1">C1</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <!-- 1.1.6 legal/consent information-->
+                                            <div class="from-group mt-3">
+                                                <div class="form-legal-info">
+                                                    <small class="form-text">
+                                                        We'll never share your personal details with
+                                                        anyone else.</small>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck1"
+                                                            required>
+                                                        <label class="form-check-label" for="gridCheck1">
+                                                            <small class="form-text">
+                                                                I consent to LingLang collecting my details
+                                                                through this form.</small>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 1.3 Booking form: Book button -->
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="submit" class="btn book-button" data-dismiss="#chooseLanguage">
+                                            <i class="fas fa-check" aria-hidden="true" title="tick!"></i><span
+                                                class="sr-only">
+                                                Check </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- choosing language form: End-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   
+
+    <!--=======================================================================================Footer Section-->
+
+    <footer class="container-fluid over-flow text-center" id="footerbg">
+        <div class="row">
+            <div class="col-lg-4 d-none d-sm-block d-md-none d-lg-block">
+                <p>
+                    <i class=" fas fa-phone-square-alt"></i> Mendebaldea 948 198 011 <br>
+                    <i class="fas fa-envelope mt-3"></i>info@westend.es <br>
+                </p>
+
+            </div>
+            <div class="col-lg-4 ">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a rel="noopener" href="https://www.facebook.com/WestEndIdiomas/" target="_blank">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a rel="noopener" href="https://twitter.com/" target="_blank">
+                            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a rel="noopener" href="https://www.instagram.com/westend_idiomas/" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block d-none d-xl-block">
+                <p class="footer_para"><i class="fas fa-map-marker-alt "><br></i> West End Languages, <br>C/ de Irunlarrea, 43, <br>31008
+                    Pamplona, Navarra </p>
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-sm-none d-md-block d-lg-none">
+                <p>
+                     <i class=" fas fa-phone-square-alt"></i> Mendebaldea 948 198 011 <br>
+                     <i class="fas fa-envelope mt-3"></i>info@westend.es <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--======================================================================== Cookie Section-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

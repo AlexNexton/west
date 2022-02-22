@@ -67,6 +67,7 @@ quit_quiz.onclick = ()=>{
     window.location.reload(); //reload the current window
 }
 
+
 //to open the
     
 
