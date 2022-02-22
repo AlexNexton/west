@@ -151,8 +151,8 @@ body{
      justify-content: space-between;
      width: 145px;
      height: 45px;
-     background-color: aliceblue;
-     border: 1px solid aqua;
+     background-color: rgb(163, 163, 177);
+     border: 1px solid rgb(233, 232, 240);
      border-radius: 5px;    
      padding: 0 8px;
 }
