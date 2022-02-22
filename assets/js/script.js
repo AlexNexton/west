@@ -40,6 +40,8 @@ let widthValue = 0;
 
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
+const sign_up= result_box.querySelector(".buttons .signup");
+
 
 // if restartQuiz button clicked
 restart_quiz.onclick = ()=>{
@@ -64,6 +66,33 @@ restart_quiz.onclick = ()=>{
 quit_quiz.onclick = ()=>{
     window.location.reload(); //reload the current window
 }
+//to open the
+    const openEls = document.querySelectorAll("[data-open]");
+    const isVisible = "is-visible";
+
+    for (const el of openEls) {
+        el.addEventListener("click", function () {
+            const modalId = this.dataset.open;
+            document.getElementById(modalId).classList.add(isVisible);
+        });
+    } //reload the current window
+    const closeEls = document.querySelectorAll("[data-close]");
+    
+
+    for (const el of closeEls) {
+        el.addEventListener("click", function () {
+            this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+        });
+    }
+    
+
+    document.addEventListener("keyup", e => {
+        if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+            document.querySelector(".modal.is-visible").classList.remove(isVisible);
+        }
+    });
+
+
 
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
