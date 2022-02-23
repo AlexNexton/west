@@ -12,6 +12,7 @@
 body{
     background: #fff; 
     overflow: hidden;
+    background: url("../img/logo_westend_latest.png") no-repeat center fixed;
   
 }
 
