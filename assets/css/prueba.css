@@ -426,7 +426,7 @@ footer button.show{
 }
 .nav-link:hover{
     border-radius: 0%;
-    background: #fff;
+    background: #e9b987;
     color: #041791;
 }
 
@@ -521,8 +521,8 @@ footer button.show{
  }
 
  .social-links li a i:hover {
-     background-color: #3748b9;
-     ;
+     background: #e9b987;
+     color: #041791;
  }
 
  .side-item {
