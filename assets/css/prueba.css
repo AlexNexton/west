@@ -17,6 +17,9 @@ body{
    /* background-image: linear-gradient(#f0ede5, #42ad03); */
   
 }
+#signup{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
 
 ::selection{
     color: #fff;
@@ -190,7 +193,7 @@ body{
 }
 
 section{
-    padding: 25px 30px 20px 30px;
+    padding: 25px 30px 80px 30px;
     background: #fff;
 }
 
@@ -269,7 +272,10 @@ section .option_list .option .icon{
 
 footer{
     position:fixed;
-    bottom: 0px;
+     left:0px;
+     bottom:0px;
+     height:100px;
+     width:100%;
     padding: 0 30px;
     display: flow-root;
     align-items: center;

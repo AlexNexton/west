@@ -24,6 +24,7 @@ exit_btn.onclick = ()=>{
 continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
+    quiz_box.classList.remove("footer"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
     startTimer(60); //calling startTimer function
