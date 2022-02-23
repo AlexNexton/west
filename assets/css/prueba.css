@@ -6,13 +6,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
      overflow: hidden;
+     
 }
 
 
 body{
-    background: #fff; 
+    height: 100vh;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     overflow: hidden;
-    background: url("../img/logo_westend_latest.png") no-repeat center fixed;
+   /* background-image: linear-gradient(#f0ede5, #42ad03); */
   
 }
 
