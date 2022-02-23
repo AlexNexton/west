@@ -268,7 +268,8 @@ section .option_list .option .icon{
 } */
 
 footer{
-    
+    position:fixed;
+    bottom: 0px;
     padding: 0 30px;
     display: flow-root;
     align-items: center;
